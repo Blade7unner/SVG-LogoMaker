@@ -1,6 +1,7 @@
 {
   "name": "svg-logomaker",
   "version": "1.0.0",
+  "type": "module",
   "description": "svg Logo maker generator",
   "main": "app.js",
   "scripts": {

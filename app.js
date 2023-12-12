@@ -1,5 +1,6 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+import inquirer from 'inquirer';
+import { writeFile } from 'fs/promises';
+
 
 function promptUser() {
     return inquirer.prompt([
