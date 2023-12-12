@@ -1,7 +1,6 @@
 import inquirer from 'inquirer';
 import { writeFile } from 'fs/promises';
 
-
 function promptUser() {
     return inquirer.prompt([
         {
@@ -56,12 +55,11 @@ function createSvg({ text, textColor, shape, shapeColor }) {
     return svgString;
 }
 
-function main() {
-    promptUser().then(answers => {
-        const svgContent = createSvg(answers);
-        fs.writeFileSync('logo.svg', svgContent);
-        console.log('Generated logo.svg');
-    });
+async function main() {
+    const answers = await promptUser();
+    const svgContent = createSvg(answers);
+    await writeFile('logo.svg', svgContent);
+    console.log('Generated logo.svg');
 }
 
 main();
