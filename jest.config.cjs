@@ -7,6 +7,7 @@ module.exports = {
     "**/?(*.)+(spec|test).[tj]s?(x)",
     "**/?(*.)+(spec|test).mjs" 
   ],
-  extensionsToTreatAsEsm: ['.cjs'],
+  extensionsToTreatAsEsm: [],
   testRunner: "jest-cjs-runner", 
 };
+
