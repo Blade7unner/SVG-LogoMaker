@@ -17,6 +17,9 @@
     "inquirer": "^7.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-node": "^29.7.0"
   },
@@ -26,5 +29,3 @@
   },
   "keywords": []
 }
-
-
