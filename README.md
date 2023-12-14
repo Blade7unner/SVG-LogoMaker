@@ -31,7 +31,7 @@ Follow the on-screen prompts to customize your logo. Once all inputs are provide
 
 ## Demonstration
 
-For a detailed walkthrough of the SVG Logo Maker, please refer to this [video](link-to-your-video).
+For a detailed walkthrough of the SVG Logo Maker, please refer to this [video](https://drive.google.com/file/d/1s9xBK9Jg3lH-nnPAD7xCrdImrxgBeX3X/view?usp=sharing).
 
 
 
