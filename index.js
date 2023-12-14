@@ -43,16 +43,23 @@ function createSvg({ text, textColor, shape, shapeColor }) {
         case 'square':
             shapeSvg = new Square(shapeColor).render();
             break;
+        default:
+            throw new Error('Unknown shape type');
     }
     return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">${shapeSvg}<text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text></svg>`;
 }
 
 async function main() {
-    const answers = await promptUser();
-    const svgContent = createSvg(answers);
-    await writeFile('logo.svg', svgContent);
-    console.log('Generated logo.svg');
+    try {
+        const answers = await promptUser();
+        const svgContent = createSvg(answers);
+        await writeFile('logo.svg', svgContent);
+        console.log('Generated logo.svg');
+    } catch (error) {
+        console.error('Error generating logo:', error);
+    }
 }
 
 main();
+
 
