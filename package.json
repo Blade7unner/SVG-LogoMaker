@@ -2,10 +2,10 @@
   "name": "svg-logomaker",
   "version": "1.0.0",
   "type": "module",
-  "description": "svg Logo maker generator",
+  "description": "SVG Logo maker generator",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "author": "",
   "license": "ISC",
@@ -18,3 +18,4 @@
     "jest-environment-node": "^29.7.0"
   }
 }
+
